@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Transport Services</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #003366;
+      color: #fff;
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://source.unsplash.com/1600x600/?hotel,car') no-repeat center center/cover;
+      color: purple;
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .service {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 500px;
+      margin: 0 auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    input, textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    button {
+      background: #003366;
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    button:hover {
+      background: #00509e;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #003366;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Goms hotel  Transport✈️</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Reliable & Comfortable Hotel Transport</h1>
+    <p>Airport pick-up, local tours, and more at your convenience.</p>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Airport Transfers</h3>
+        <p>Pick-up and drop-off services to all major airports.</p>
+      </div>
+      <div class="service">
+        <h3>City Tours</h3>
+        <p>Explore the city with our guided hotel tour packages.</p>
+      </div>
+      <div class="service">
+        <h3>Luxury Vehicles</h3>
+        <p>Ride in style with our range of premium transport options.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us☎️</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message✉️</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Luxury Hotel Transport. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Thank you for contacting us! We will get back to you soon.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
